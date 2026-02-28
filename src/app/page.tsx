@@ -14,11 +14,11 @@ export default function HomePage() {
         <Container>
           <div className="mx-auto max-w-3xl">
             <h1 className="text-5xl font-bold tracking-tight sm:text-7xl text-foreground">
-              Software that feels inevitable.
+              In Pursuit of Better.
             </h1>
             <p className="mt-8 text-xl leading-8 text-muted-foreground">
-              We build focused products for operations, commerce, and modern workflows.
-              Quietly ambitious. Ruthlessly practical.
+              Building focused products for operations, commerce, and modern workflows.
+              Quietly ambitious. Restless against mediocrity.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button size="lg" asChild>
