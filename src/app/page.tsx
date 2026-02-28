@@ -13,7 +13,7 @@ export default function HomePage() {
       <Section className="flex flex-col items-center justify-center text-center pt-32 pb-24 sm:pt-48 sm:pb-32">
         <Container>
           <div className="mx-auto max-w-3xl">
-            <h1 className="text-5xl font-bold tracking-tight sm:text-7xl text-foreground">
+            <h1 className="font-heading text-5xl sm:text-7xl font-semibold tracking-tight text-foreground">
               In Pursuit of Better.
             </h1>
             <p className="mt-8 text-xl leading-8 text-muted-foreground">

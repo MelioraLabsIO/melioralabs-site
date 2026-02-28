@@ -22,7 +22,7 @@ export function Header() {
         <nav className="flex items-center justify-between py-4" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 text-xl font-bold tracking-tight">
-              Meliora Labs
+              MELIORA LABS
             </Link>
           </div>
           

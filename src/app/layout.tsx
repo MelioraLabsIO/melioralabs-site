@@ -1,48 +1,45 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {Inter, IBM_Plex_Sans} from "next/font/google";
+import type {Metadata} from "next";
+import {Header} from "@/components/site/header";
+import {Footer} from "@/components/site/footer";
+import {ThemeProvider} from "@/components/site/theme-provider";
 import "./globals.css";
-import { Header } from "@/components/site/header";
-import { Footer } from "@/components/site/footer";
-import { ThemeProvider } from "@/components/site/theme-provider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const inter = Inter({
+    subsets: ["latin"],
+    variable: "--font-sans",
+    display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const plex = IBM_Plex_Sans({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
+    variable: "--font-heading",
+    display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Meliora Labs | Engineering Excellence",
-  description: "Building the next generation of digital infrastructure and platforms.",
+    title: "Meliora Labs",
+    description: "In Pursuit of Better.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background font-sans text-foreground antialiased`}
-      >
+export default function RootLayout({children}: { children: React.ReactNode }) {
+    return (
+        <html lang="en" className={`${inter.variable} ${plex.variable}`} suppressHydrationWarning>
+        <body className="min-h-screen bg-background font-sans text-foreground antialiased">
         <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
         >
-          <div className="relative flex min-h-screen flex-col">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
+            <div className="relative flex min-h-screen flex-col">
+                <Header/>
+                <main className="flex-1">{children}</main>
+                <Footer/>
+            </div>
         </ThemeProvider>
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }
