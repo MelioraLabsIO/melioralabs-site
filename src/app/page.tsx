@@ -88,6 +88,16 @@ export default function HomePage() {
               description="An all-in-one commerce solution for barbershops, integrating service booking, product sales, and customer management into a seamless workflow."
               status="In Development"
             />
+            <ProductCard 
+              title="Fair Pricing"
+              description="A community-driven, Reddit-like platform for sharing and comparing prices across all products and services to expose algorithmic price discrimination."
+              status="In Development"
+            />
+            <ProductCard 
+              title="Foodie Journal"
+              description="A minimalist social platform for culinary enthusiasts to document their food journeys, discover hidden gems, and share authentic reviews."
+              status="Upcoming"
+            />
           </div>
         </Container>
       </Section>
