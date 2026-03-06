@@ -97,6 +97,7 @@ export default function HomePage() {
               title="Alimenta"
               description="A minimalist social platform for culinary enthusiasts to document their food journeys, discover hidden gems, and share authentic reviews."
               status="In Development"
+              href={"https://alimenta-ui.vercel.app/"}
             />
           </div>
         </Container>
