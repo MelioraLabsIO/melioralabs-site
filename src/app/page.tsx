@@ -91,12 +91,12 @@ export default function HomePage() {
             <ProductCard 
               title="Fair Pricing"
               description="A community-driven, Reddit-like platform for sharing and comparing prices across all products and services to expose algorithmic price discrimination."
-              status="In Development"
+              status="Upcoming"
             />
             <ProductCard 
-              title="Foodie Journal"
+              title="Alimenta"
               description="A minimalist social platform for culinary enthusiasts to document their food journeys, discover hidden gems, and share authentic reviews."
-              status="Upcoming"
+              status="In Development"
             />
           </div>
         </Container>
