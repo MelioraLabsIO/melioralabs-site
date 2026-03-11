@@ -82,6 +82,7 @@ export default function HomePage() {
               title="HOAM"
               description="A comprehensive Homeowner Association Management platform designed to streamline communication, finances, and maintenance for modern communities."
               status="In Development"
+              href={"https://hoam-frontend-gjrkax348-ehlabradas-projects.vercel.app/"}
             />
             <ProductCard 
               title="Barber Commerce Platform"
